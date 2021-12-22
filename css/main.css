@@ -274,6 +274,11 @@ textarea {
 
 @font-face { font-family: chris; src: url('Christmas\ Cards\ xxx.ttf'); } 
 
+
+/* =============================================================== */
+/*                           PAGE D' ACCUEIL                       */
+/* =============================================================== */
+
 /* =============================================================== */
 /*                           BARRE DE NAVIGATION                   */
 /* =============================================================== */
@@ -407,6 +412,9 @@ header figure img{
   height: 39vh;
   object-fit: cover;
 }
+.article3 figure a img:hover{
+  opacity: 0.5;
+}
 .article4{
   grid-area: article4;
   border: 2px #0d0d0d59 solid;
@@ -454,4 +462,111 @@ footer{
 .info{
   padding-left: 1em;
   padding-top: 0.5em;
+}
+
+/* =============================================================== */
+/*                           GALERIE                               */
+/* =============================================================== */
+.galerie{
+  width: 100vw;
+  max-width: 100%;
+  height: 200vh;
+  margin-bottom: 5em;
+  padding-top: 7em;
+  display: grid;
+  grid-gap: 1vw;
+  grid-template-columns:repeat(4, 1fr) ;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas: "photo1 photo2 photo3 photo4"
+                       "photo5 photo2 photo6 photo6"
+                       "photo5 photo7 photo7 photo8"
+                       "photo9 photo10 photo10 photo11";
+}
+.photo1{
+  grid-area: photo1;
+}
+.photo1 img{
+  width: 25vw;
+  height: 50vh;
+  object-fit: cover;
+}
+.photo2{
+  grid-area: photo2;
+}
+.photo2 img{
+  width: 25vw;
+  height: 100vh;
+  object-fit: cover;
+}
+.photo3{
+  grid-area: photo3;
+}
+.photo3 img{
+  width: 25vw;
+  height: 50vh;
+  object-fit: cover;
+}
+.photo4{
+  grid-area: photo4;
+}
+.photo4 img{
+  width: 25vw;
+  height: 50vh;
+  object-fit: cover;
+}
+.photo5{
+  grid-area: photo5;
+}
+.photo5 img{
+  width: 25vw;
+  height: 100vh;
+  object-fit: cover;
+}
+.photo6{
+  grid-area: photo6;
+}
+.photo6 img{
+  width: 50vw;
+  height: 50vh;
+  object-fit: cover;
+}
+.photo7{
+  grid-area: photo7;
+}
+.photo7 img{
+  width: 50vw;
+  height: 50vh;
+  object-fit: cover;
+}
+.photo8{
+  grid-area: photo8;
+}
+.photo8 img{
+  width: 25vw;
+  height: 50vh;
+  object-fit: cover;
+}
+.photo9{
+  grid-area: photo9;
+}
+.photo9 img{
+  width: 25vw;
+  height: 50vh;
+  object-fit: cover;
+}
+.photo10{
+  grid-area: photo10;
+}
+.photo10 img{
+  width: 50vw;
+  height: 50vh;
+  object-fit: cover;
+}
+.photo11{
+  grid-area: photo11;
+}
+.photo11 img{
+  width: 25vw;
+  height: 50vh;
+  object-fit: cover;
 }
