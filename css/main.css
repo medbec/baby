@@ -586,3 +586,45 @@ footer{
 /* =============================================================== */
 /*                            STUDIO                               */
 /* =============================================================== */
+.studio{
+  width: 100vw;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 30%);
+  grid-template-areas: "tof1 tof1"
+                       "tof2 tof3";                       
+}
+.studioPics1{
+  grid-area: tof1;
+}
+.studioPics2{
+  grid-area: tof2;
+}
+.studioPics3{
+  grid-area: tof3;
+}
+.studioTofs{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.paraStudio{
+  background-color: #F2F2F2;
+  position: absolute;
+  top: 120vh;
+  height: 70vh;
+}
+.paraStudio h2{
+  text-align: center;
+  color: #0D0D0D;
+  opacity: 0.7;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.paraStudio p{
+  font-family: Tahoma, Geneva, Verdana, sans-serif;
+  padding-left: 1em;
+}
+/* =============================================================== */
+/*                          MAIN                                   */
+/* =============================================================== */
