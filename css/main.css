@@ -471,7 +471,7 @@ footer{
 .galerie{
   width: 100vw;
   max-width: 100%;
-  padding-top: 5em;
+  padding-top: 13vh;
   display: grid;
   gap: 1em;
   grid-template-columns:repeat(4, 1fr) ;
@@ -524,4 +524,65 @@ footer{
 }
 /* =============================================================== */
 /*                             BLOG                                */
+/* =============================================================== */
+.blogPic{
+  width: 100%;
+  height: 50vh;
+  object-fit: cover;
+}
+.blog{
+  width: 100vw;
+  max-width: 100%;
+  margin-top: 0.5em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  background-color: #F2F2F2;
+  gap: 5em;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas: 
+                       ". pic1 art1 art1 ."
+                       ". pic2 art2 art2 ."
+                       ". pic3 art3 art3 .";
+}
+.blogfig1{
+  grid-area: pic1;
+}
+.Barticle1{
+  grid-area: art1;
+  border: 2px #0d0d0d59 solid;
+  padding-left: 1em;
+}
+.blogfig2{
+  grid-area: pic2;
+}
+.Barticle2{
+  grid-area: art2;
+  border: 2px #0d0d0d59 solid;
+  padding-left: 1em;
+}
+.blogfig3{
+  grid-area: pic3;
+}
+.Barticle3{
+  grid-area: art3;
+  border: 2px #0d0d0d59 solid;
+  padding-left: 1em;
+}
+.blogPics{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.titreBlog{
+  color: #0D0D0D;
+  opacity: 0.7;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.paraBlog{
+  font-family: Tahoma, Geneva, Verdana, sans-serif;
+}
+/* =============================================================== */
+/*                            STUDIO                               */
 /* =============================================================== */
