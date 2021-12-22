@@ -467,14 +467,13 @@ footer{
 /* =============================================================== */
 /*                           GALERIE                               */
 /* =============================================================== */
+
 .galerie{
   width: 100vw;
   max-width: 100%;
-  height: 200vh;
-  margin-bottom: 5em;
-  padding-top: 7em;
+  padding-top: 5em;
   display: grid;
-  grid-gap: 1vw;
+  gap: 1em;
   grid-template-columns:repeat(4, 1fr) ;
   grid-template-rows: repeat(4, 1fr);
   grid-template-areas: "photo1 photo2 photo3 photo4"
@@ -485,88 +484,44 @@ footer{
 .photo1{
   grid-area: photo1;
 }
-.photo1 img{
-  width: 25vw;
-  height: 50vh;
-  object-fit: cover;
-}
 .photo2{
   grid-area: photo2;
-}
-.photo2 img{
-  width: 25vw;
-  height: 100vh;
-  object-fit: cover;
 }
 .photo3{
   grid-area: photo3;
 }
-.photo3 img{
-  width: 25vw;
-  height: 50vh;
-  object-fit: cover;
-}
 .photo4{
   grid-area: photo4;
-}
-.photo4 img{
-  width: 25vw;
-  height: 50vh;
-  object-fit: cover;
 }
 .photo5{
   grid-area: photo5;
 }
-.photo5 img{
-  width: 25vw;
-  height: 100vh;
-  object-fit: cover;
-}
 .photo6{
   grid-area: photo6;
-}
-.photo6 img{
-  width: 50vw;
-  height: 50vh;
-  object-fit: cover;
 }
 .photo7{
   grid-area: photo7;
 }
-.photo7 img{
-  width: 50vw;
-  height: 50vh;
-  object-fit: cover;
-}
 .photo8{
   grid-area: photo8;
-}
-.photo8 img{
-  width: 25vw;
-  height: 50vh;
-  object-fit: cover;
 }
 .photo9{
   grid-area: photo9;
 }
-.photo9 img{
-  width: 25vw;
-  height: 50vh;
-  object-fit: cover;
-}
 .photo10{
   grid-area: photo10;
-}
-.photo10 img{
-  width: 50vw;
-  height: 50vh;
-  object-fit: cover;
 }
 .photo11{
   grid-area: photo11;
 }
-.photo11 img{
-  width: 25vw;
-  height: 50vh;
+.pics{
+  width: 100%;
+  height: 100%;
   object-fit: cover;
 }
+.pics:hover{
+  opacity: 0.7;
+}
+/* =============================================================== */
+/*                             BLOG                                */
+/* =============================================================== */
