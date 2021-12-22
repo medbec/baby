@@ -626,5 +626,68 @@ footer{
   padding-left: 1em;
 }
 /* =============================================================== */
-/*                          MAIN                                   */
+/*                          formulaire                             */
+/* =============================================================== */
+.formulaire{
+  width: 100vw;
+  max-width: 100%;
+  padding-top: 13vh;
+  padding-bottom: 1em;
+  margin: auto;
+  background-color: #F2F2F2;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 30%);
+  grid-template-areas: ". part1 ."
+                       ". part2 .";
+}
+.formParag1{
+  grid-area: part1;
+}
+.formParag2{
+  grid-area: part2;
+}
+.formParag1 h1{
+  color: #0D0D0D;
+  opacity: 0.7;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* =============================================================== */
+/*                          ABOUT                                  */
+/* =============================================================== */
+.mainAbout{
+  width: 100vw;
+  max-width: 100%;
+  padding-top: 13vh;
+  padding-bottom: 1em;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 30%);
+  grid-template-areas: "myPic myPic myPic myPic"
+                       ". myTitle myTitle ."
+                       "myParag myParag myParag myParag";
+}
+.aboutPic{
+  grid-area: myPic;
+}
+.aboutPic img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.aboutTitle{
+  grid-area: myTitle;
+  text-align: center;
+  background-color: #F2F2F2;
+  color: #0D0D0D;
+  opacity: 0.7;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 0px;
+}
+.aboutParag{
+  grid-area: myParag;
+  background-color: #F2F2F2;
+  margin: 0%;
+}
+/* =============================================================== */
+/*                          PRESTATION                             */
 /* =============================================================== */
