@@ -695,16 +695,17 @@ footer{
   width: 100vw;
   max-width: 100%;
   background-color: #F2F2F2;
+  gap: 3em;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(7, 30%);
-  grid-template-areas:". . . . ."
-                      ". artPres1 . artPres2."
-                      ". artPres1 . artPres2."
-                      ". . . . ."
-                      ". artPres3 . artPres4"
-                      ". artPres3 . artPres4"
-                      ". . . . .";
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(7, 10%);
+  grid-template-areas:". . . ."
+                      ". artPres1 artPres2 ."
+                      ". artPres1 artPres2 ."
+                      ". . . ."
+                      ". artPres3 artPres4 ."
+                      ". artPres3 artPres4 ."
+                      ". . . .";
 }
 .prestaPics{
   width: 100%;
