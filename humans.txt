@@ -3,11 +3,11 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    <medbec> -- <dev> -- <https://github.com/medbec>
 
 # THANKS
 
-    <name>
+    <a moi :p>
 
 # TECHNOLOGY COLOPHON
 
