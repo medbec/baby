@@ -1,32 +1,43 @@
 /*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
 
+
 /* main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
+
+
 /*
  * What follows is the result of much research on cross-browser styling.
  * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
  * Kroc Camen, and the H5BP dev community and team.
  */
 
+
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
 
 html {
-  color: #222;
-  font-size: 1em;
-  line-height: 1.4;
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
 }
+
 
 /* ==========================================================================
    renisialisation figure
    ========================================================================== */
-   figure {
+
+figure {
     display: block;
     margin-block-start: 0em;
     margin-block-end: 0em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
 }
+
+body {
+    margin: 0;
+}
+
 
 /*
  * Remove text-shadow in selection highlight:
@@ -39,27 +50,29 @@ html {
  */
 
 ::-moz-selection {
-  background: #b3d4fc;
-  text-shadow: none;
+    background: #b3d4fc;
+    text-shadow: none;
 }
 
 ::selection {
-  background: #b3d4fc;
-  text-shadow: none;
+    background: #b3d4fc;
+    text-shadow: none;
 }
+
 
 /*
  * A better looking default horizontal rule
  */
 
 hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #ccc;
-  margin: 1em 0;
-  padding: 0;
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
 }
+
 
 /*
  * Remove the gap between audio, canvas, iframes,
@@ -73,34 +86,39 @@ iframe,
 img,
 svg,
 video {
-  vertical-align: middle;
+    vertical-align: middle;
 }
+
 
 /*
  * Remove default fieldset styles.
  */
 
 fieldset {
-  border: 0;
-  margin: 0;
-  padding: 0;
+    border: 0;
+    margin: 0;
+    padding: 0;
 }
+
 
 /*
  * Allow only vertical resizing of textareas.
  */
 
 textarea {
-  resize: vertical;
+    resize: vertical;
 }
+
 
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
 
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
+
 
 /*
  * Hide visually and from screen readers
@@ -108,8 +126,9 @@ textarea {
 
 .hidden,
 [hidden] {
-  display: none !important;
+    display: none !important;
 }
+
 
 /*
  * Hide only visually, but have it available for screen readers:
@@ -121,17 +140,18 @@ textarea {
  */
 
 .sr-only {
-  border: 0;
-  clip: rect(0, 0, 0, 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  /* 1 */
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    /* 1 */
 }
+
 
 /*
  * Extends the .sr-only class to allow the element
@@ -141,22 +161,24 @@ textarea {
 
 .sr-only.focusable:active,
 .sr-only.focusable:focus {
-  clip: auto;
-  height: auto;
-  margin: 0;
-  overflow: visible;
-  position: static;
-  white-space: inherit;
-  width: auto;
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    white-space: inherit;
+    width: auto;
 }
+
 
 /*
  * Hide visually and from screen readers, but maintain layout
  */
 
 .invisible {
-  visibility: hidden;
+    visibility: hidden;
 }
+
 
 /*
  * Clearfix: contain floats
@@ -172,13 +194,14 @@ textarea {
 
 .clearfix::before,
 .clearfix::after {
-  content: " ";
-  display: table;
+    content: " ";
+    display: table;
 }
 
 .clearfix::after {
-  clear: both;
+    clear: both;
 }
+
 
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
@@ -187,15 +210,16 @@ textarea {
    ========================================================================== */
 
 @media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+    /* Style adjustments for viewports that meet the condition */
 }
 
 @media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
 }
+
 
 /* ==========================================================================
    Print styles.
@@ -204,523 +228,637 @@ textarea {
    ========================================================================== */
 
 @media print {
-  *,
-  *::before,
-  *::after {
-    background: #fff !important;
-    color: #000 !important;
-    /* Black prints faster */
-    box-shadow: none !important;
-    text-shadow: none !important;
-  }
-
-  a,
-  a:visited {
-    text-decoration: underline;
-  }
-
-  a[href]::after {
-    content: " (" attr(href) ")";
-  }
-
-  abbr[title]::after {
-    content: " (" attr(title) ")";
-  }
-
-  /*
+    *,
+    *::before,
+    *::after {
+        background: #fff !important;
+        color: #000 !important;
+        /* Black prints faster */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+    a[href]::after {
+        content: " (" attr(href) ")";
+    }
+    abbr[title]::after {
+        content: " (" attr(title) ")";
+    }
+    /*
    * Don't show links that are fragment identifiers,
    * or use the `javascript:` pseudo protocol
    */
-  a[href^="#"]::after,
-  a[href^="javascript:"]::after {
-    content: "";
-  }
-
-  pre {
-    white-space: pre-wrap !important;
-  }
-
-  pre,
-  blockquote {
-    border: 1px solid #999;
-    page-break-inside: avoid;
-  }
-
-  /*
+    a[href^="#"]::after,
+    a[href^="javascript:"]::after {
+        content: "";
+    }
+    pre {
+        white-space: pre-wrap !important;
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+    /*
    * Printing Tables:
    * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
    */
-  thead {
-    display: table-header-group;
-  }
-
-  tr,
-  img {
-    page-break-inside: avoid;
-  }
-
-  p,
-  h2,
-  h3 {
-    orphans: 3;
-    widows: 3;
-  }
-
-  h2,
-  h3 {
-    page-break-after: avoid;
-  }
+    thead {
+        display: table-header-group;
+    }
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
 }
 
-@font-face { font-family: chris; src: url('Christmas\ Cards\ xxx.ttf'); } 
+@font-face {
+    font-family: chris;
+    src: url('Christmas\ Cards\ xxx.ttf');
+}
 
 
 /* =============================================================== */
+
+
 /*                           PAGE D' ACCUEIL                       */
-/* =============================================================== */
+
 
 /* =============================================================== */
+
+
+/* =============================================================== */
+
+
 /*                           BARRE DE NAVIGATION                   */
+
+
 /* =============================================================== */
 
-header{
-  width: 100vw;
-  height: 10vh;
-  position: fixed;
-  display: flex;
-  flex-direction: row;
-  background-color: #E8DADA;
+header {
+    width: 100vw;
+    height: 10vh;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    background-color: #E8DADA;
 }
-nav ul{
-  width: 95vw;
-  display: flex;
-  justify-content: space-evenly;
-  padding: 0px;
-  margin: 0px;
+
+nav ul {
+    width: 95vw;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0px;
+    margin: 0px;
 }
-nav ul li{
-  list-style-type: none;
+
+nav ul li {
+    list-style-type: none;
 }
-nav ul li a{
-  line-height: 10vh;
-  text-decoration: none;
-  color: whitesmoke;
-  font-family: chris, Tahoma, Geneva, Verdana, sans-serif;
+
+nav ul li a {
+    line-height: 10vh;
+    text-decoration: none;
+    color: whitesmoke;
+    font-family: chris, Tahoma, Geneva, Verdana, sans-serif;
 }
-nav ul li a:hover{
-  color: #C3DAE8;
-  transition: 0.5s;
+
+nav ul li a:hover {
+    color: #C3DAE8;
+    transition: 0.5s;
 }
-header figure img{
-  width: 5vw;
-  height: 10vh;
-  object-fit: cover;
+
+header figure a img {
+    width: 100%;
+    height: 10vh;
+    object-fit: cover;
 }
+
+
 /* =============================================================== */
+
+
 /*                          MAIN                                   */
+
+
 /* =============================================================== */
-.main figure img{
-  width: 100vw;
-  max-width: 100%;
-  height: 90vh;
-  object-fit: cover;
-  margin-top: 10vh;
+
+.main figure img {
+    width: 100vw;
+    max-width: 100%;
+    height: 90vh;
+    object-fit: cover;
+    margin-top: 10vh;
 }
-.main article{ 
-  text-align: center;
-  position: absolute;
-  top: 10vh;
-  margin: 10em;
+
+.main article {
+    text-align: center;
+    position: absolute;
+    top: 10vh;
+    margin: 10em;
 }
-.main article h1{
-  color: #C3DAE8;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+.main article h1 {
+    color: #C3DAE8;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.main article p{
-  color: #E8E8C3;
-  font-family: chris, Tahoma, Geneva, Verdana, sans-serif;
+
+.main article p {
+    color: #E8E8C3;
+    font-family: chris, Tahoma, Geneva, Verdana, sans-serif;
 }
+
+
 /* =============================================================== */
+
+
 /*                          LOGO                                   */
+
+
 /* =============================================================== */
-.logo a img{
-  width: 5vw;
-  height: 10vh;
-  margin-top: 5em;
-  object-fit: fill;
-  opacity: 0.5;
+
+.logo a img {
+    width: 5vw;
+    height: 10vh;
+    margin-top: 5em;
+    object-fit: fill;
+    opacity: 0.5;
 }
-.logo a img:hover{
-  opacity: 0.7;
-  transition: 0.5s;
+
+.logo a img:hover {
+    opacity: 0.7;
+    transition: 0.5s;
 }
-.logo{
-  position: absolute;
-  top: 20vh;
+
+.logo {
+    position: absolute;
+    top: 20vh;
 }
-.logo li{
-  list-style-type: none;
+
+.logo li {
+    list-style-type: none;
 }
+
+
 /* =============================================================== */
+
+
 /*                        contener                                 */
-/* =============================================================== */
-.contener{
-  width: 100vw;
-  max-width: 100%;
-  height: 120vh;
-  margin-top: 0.5em;
-  display: grid;
-  grid-template-columns: repeat(5 ,1fr);
-  grid-template-rows: repeat(6 ,1fr);
-  grid-template-areas: 
-                       "photo photo article2 article2 article2"
-                       "photo photo article2 article2 article2"
-                       "vide vide vide vide vide"
-                       ". localisation . article4 ."
-                       ". localisation . article4 ."
-                       ". . . . .";
-  background-color: #F2F2F2;
-}
-.article1{
-  grid-area: photo;
-}
-.article1 figure img{
-  width: 40vw;
-  height: 40vh;
-  object-fit: cover;
-}
-.article2{
-  grid-area: article2;
-}
-.article2 h2{
-  margin-left: 0.5em;
-  color: #0D0D0D;
-  opacity: 0.7;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-.article2 p{
-  margin-left: 1em;
-  font-family: Tahoma, Geneva, Verdana, sans-serif;
 
-}
-.article3{
-  grid-area: localisation;
-  border: 2px #0d0d0d59 solid;
-}
-.article3 figure a img{
-  width: 20vw;
-  height: 39vh;
-  object-fit: cover;
-}
-.article3 figure a img:hover{
-  opacity: 0.5;
-}
-.article4{
-  grid-area: article4;
-  border: 2px #0d0d0d59 solid;
-}
-.article4 h2{
-  text-align: center;
-  margin: 0;
-  margin-top: 0.5em;
-  color: #0D0D0D;
-  opacity: 0.7;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-.article4 p{
-  margin: 0;
-  margin-top: 1.2em;
-  text-align: center;
-  font-family: Tahoma, Geneva, Verdana, sans-serif;
-}
-.vide{
-  grid-area: vide;
-  background-color: white;
-  height: 0.5em;
-}
+
 /* =============================================================== */
+
+.contener {
+    width: 100vw;
+    max-width: 100%;
+    height: 120vh;
+    margin-top: 0.5em;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas: "photo photo article2 article2 article2" "photo photo article2 article2 article2" "vide vide vide vide vide" ". localisation . article4 ." ". localisation . article4 ." ". . . . .";
+    background-color: #F2F2F2;
+}
+
+.article1 {
+    grid-area: photo;
+}
+
+.article1 figure img {
+    width: 40vw;
+    height: 40vh;
+    object-fit: cover;
+}
+
+.article2 {
+    grid-area: article2;
+}
+
+.article2 h2 {
+    margin-left: 0.5em;
+    color: #0D0D0D;
+    opacity: 0.7;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.article2 p {
+    margin-left: 1em;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.article3 {
+    grid-area: localisation;
+    border: 2px #0d0d0d59 solid;
+}
+
+.article3 figure a img {
+    width: 20vw;
+    height: 39vh;
+    object-fit: cover;
+}
+
+.article3 figure a img:hover {
+    opacity: 0.5;
+}
+
+.article4 {
+    grid-area: article4;
+    border: 2px #0d0d0d59 solid;
+}
+
+.article4 h2 {
+    text-align: center;
+    margin: 0;
+    margin-top: 0.5em;
+    color: #0D0D0D;
+    opacity: 0.7;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.article4 p {
+    margin: 0;
+    margin-top: 1.2em;
+    text-align: center;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.vide {
+    grid-area: vide;
+    background-color: white;
+    height: 0.5em;
+}
+
+
+/* =============================================================== */
+
+
 /*                        footer                                   */
-/* =============================================================== */
-.general *{
-  text-align: center;
-  margin: 0px;
-}
-.general{
-  margin-right: 40vw;
-}
-footer{
-  background-color: #8C8787;
-  margin-top: 0.5em;
-  padding-top: 0.5em;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.info *{
-  margin: 0px;
-}
-.info{
-  padding-left: 1em;
-  padding-top: 0.5em;
-}
+
 
 /* =============================================================== */
+
+.general * {
+    text-align: center;
+    margin: 0px;
+}
+
+.general {
+    margin-right: 40vw;
+}
+
+footer {
+    background-color: #8C8787;
+    margin-top: 0.5em;
+    padding-top: 0.5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.info * {
+    margin: 0px;
+}
+
+.info {
+    padding-left: 1em;
+    padding-top: 0.5em;
+}
+
+
+/* =============================================================== */
+
+
 /*                           GALERIE                               */
+
+
 /* =============================================================== */
 
-.galerie{
-  width: 100vw;
-  max-width: 100%;
-  padding-top: 13vh;
-  display: grid;
-  gap: 1em;
-  grid-template-columns:repeat(4, 1fr) ;
-  grid-template-rows: repeat(4, 1fr);
-  grid-template-areas: "photo1 photo2 photo3 photo4"
-                       "photo5 photo2 photo6 photo6"
-                       "photo5 photo7 photo7 photo8"
-                       "photo9 photo10 photo10 photo11";
+.galerie {
+    width: 100vw;
+    max-width: 100%;
+    padding-top: 13vh;
+    display: grid;
+    gap: 1em;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: "photo1 photo2 photo3 photo4" "photo5 photo2 photo6 photo6" "photo5 photo7 photo7 photo8" "photo9 photo10 photo10 photo11";
 }
-.photo1{
-  grid-area: photo1;
+
+.photo1 {
+    grid-area: photo1;
 }
-.photo2{
-  grid-area: photo2;
+
+.photo2 {
+    grid-area: photo2;
 }
-.photo3{
-  grid-area: photo3;
+
+.photo3 {
+    grid-area: photo3;
 }
-.photo4{
-  grid-area: photo4;
+
+.photo4 {
+    grid-area: photo4;
 }
-.photo5{
-  grid-area: photo5;
+
+.photo5 {
+    grid-area: photo5;
 }
-.photo6{
-  grid-area: photo6;
+
+.photo6 {
+    grid-area: photo6;
 }
-.photo7{
-  grid-area: photo7;
+
+.photo7 {
+    grid-area: photo7;
 }
-.photo8{
-  grid-area: photo8;
+
+.photo8 {
+    grid-area: photo8;
 }
-.photo9{
-  grid-area: photo9;
+
+.photo9 {
+    grid-area: photo9;
 }
-.photo10{
-  grid-area: photo10;
+
+.photo10 {
+    grid-area: photo10;
 }
-.photo11{
-  grid-area: photo11;
+
+.photo11 {
+    grid-area: photo11;
 }
-.pics{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+
+.pics {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
-.pics:hover{
-  opacity: 0.7;
+
+.pics:hover {
+    opacity: 0.7;
 }
+
+
 /* =============================================================== */
+
+
 /*                             BLOG                                */
+
+
 /* =============================================================== */
-.blogPic{
-  width: 100%;
-  height: 50vh;
-  object-fit: cover;
+
+.blogPic {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
 }
-.blog{
-  width: 100vw;
-  max-width: 100%;
-  margin-top: 0.5em;
-  padding-top: 1em;
-  padding-bottom: 1em;
-  background-color: #F2F2F2;
-  gap: 5em;
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  grid-template-areas: 
-                       ". pic1 art1 art1 ."
-                       ". pic2 art2 art2 ."
-                       ". pic3 art3 art3 .";
+
+.blog {
+    width: 100vw;
+    max-width: 100%;
+    margin-top: 0.5em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    background-color: #F2F2F2;
+    gap: 5em;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: ". pic1 art1 art1 ." ". pic2 art2 art2 ." ". pic3 art3 art3 .";
 }
-.blogfig1{
-  grid-area: pic1;
+
+.blogfig1 {
+    grid-area: pic1;
 }
-.Barticle1{
-  grid-area: art1;
-  border: 2px #0d0d0d59 solid;
-  padding-left: 1em;
+
+.Barticle1 {
+    grid-area: art1;
+    border: 2px #0d0d0d59 solid;
+    padding-left: 1em;
 }
-.blogfig2{
-  grid-area: pic2;
+
+.blogfig2 {
+    grid-area: pic2;
 }
-.Barticle2{
-  grid-area: art2;
-  border: 2px #0d0d0d59 solid;
-  padding-left: 1em;
+
+.Barticle2 {
+    grid-area: art2;
+    border: 2px #0d0d0d59 solid;
+    padding-left: 1em;
 }
-.blogfig3{
-  grid-area: pic3;
+
+.blogfig3 {
+    grid-area: pic3;
 }
-.Barticle3{
-  grid-area: art3;
-  border: 2px #0d0d0d59 solid;
-  padding-left: 1em;
+
+.Barticle3 {
+    grid-area: art3;
+    border: 2px #0d0d0d59 solid;
+    padding-left: 1em;
 }
-.blogPics{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+
+.blogPics {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
-.titreBlog{
-  color: #0D0D0D;
-  opacity: 0.7;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+.titreBlog {
+    color: #0D0D0D;
+    opacity: 0.7;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.paraBlog{
-  font-family: Tahoma, Geneva, Verdana, sans-serif;
+
+.paraBlog {
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
 }
+
+
 /* =============================================================== */
+
+
 /*                            STUDIO                               */
+
+
 /* =============================================================== */
-.studio{
-  width: 100vw;
-  max-width: 100%;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 30%);
-  grid-template-areas: "tof1 tof1"
-                       "tof2 tof3";                       
+
+.studio {
+    width: 100vw;
+    max-width: 100%;
+    padding-top: 10vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 30%);
+    grid-template-areas: "tof1 tof1" "tof2 tof3";
 }
-.studioPics1{
-  grid-area: tof1;
+
+.studioPics1 {
+    grid-area: tof1;
 }
-.studioPics2{
-  grid-area: tof2;
+
+.studioPics2 {
+    grid-area: tof2;
 }
-.studioPics3{
-  grid-area: tof3;
+
+.studioPics3 {
+    grid-area: tof3;
 }
-.studioTofs{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+
+.studioTofs {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
-.paraStudio{
-  background-color: #F2F2F2;
-  position: absolute;
-  top: 120vh;
-  height: 70vh;
+
+.paraStudio {
+    background-color: #F2F2F2;
 }
-.paraStudio h2{
-  text-align: center;
-  color: #0D0D0D;
-  opacity: 0.7;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+.paraStudio h1 {
+    text-align: center;
+    color: #0D0D0D;
+    opacity: 0.7;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.paraStudio p{
-  font-family: Tahoma, Geneva, Verdana, sans-serif;
-  padding-left: 1em;
+
+.paraStudio p {
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    padding-left: 1em;
 }
+
+
 /* =============================================================== */
+
+
 /*                          formulaire                             */
+
+
 /* =============================================================== */
-.formulaire{
-  width: 100vw;
-  max-width: 100%;
-  padding-top: 13vh;
-  padding-bottom: 1em;
-  margin: auto;
-  background-color: #F2F2F2;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 30%);
-  grid-template-areas: ". part1 ."
-                       ". part2 .";
+
+.formulaire {
+    width: 100vw;
+    max-width: 100%;
+    padding-top: 13vh;
+    padding-bottom: 1em;
+    margin: auto;
+    background-color: #F2F2F2;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 30%);
+    grid-template-areas: ". part1 ." ". part2 .";
 }
-.formParag1{
-  grid-area: part1;
+
+.formParag1 {
+    grid-area: part1;
 }
-.formParag2{
-  grid-area: part2;
+
+.formParag2 {
+    grid-area: part2;
 }
-.formParag1 h1{
-  color: #0D0D0D;
-  opacity: 0.7;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+.formParag1 h1 {
+    color: #0D0D0D;
+    opacity: 0.7;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+
 /* =============================================================== */
+
+
 /*                          ABOUT                                  */
+
+
 /* =============================================================== */
-.mainAbout{
-  width: 100vw;
-  max-width: 100%;
-  padding-top: 13vh;
-  padding-bottom: 1em;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(3, 30%);
-  grid-template-areas: "myPic myPic myPic myPic"
-                       ". myTitle myTitle ."
-                       "myParag myParag myParag myParag";
+
+.mainAbout {
+    width: 100vw;
+    max-width: 100%;
+    padding-top: 13vh;
+    padding-bottom: 1em;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 30%);
+    grid-template-areas: "myPic myPic myPic myPic" ". myTitle myTitle ." "myParag myParag myParag myParag";
 }
-.aboutPic{
-  grid-area: myPic;
+
+.aboutPic {
+    grid-area: myPic;
 }
-.aboutPic img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+
+.aboutPic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
-.aboutTitle{
-  grid-area: myTitle;
-  text-align: center;
-  background-color: #F2F2F2;
-  color: #0D0D0D;
-  opacity: 0.7;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  margin-bottom: 0px;
+
+.aboutTitle {
+    grid-area: myTitle;
+    text-align: center;
+    background-color: #F2F2F2;
+    color: #0D0D0D;
+    opacity: 0.7;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 0px;
 }
-.aboutParag{
-  grid-area: myParag;
-  background-color: #F2F2F2;
-  margin: 0%;
+
+.aboutParag {
+    grid-area: myParag;
+    background-color: #F2F2F2;
+    margin: 0%;
 }
+
+
 /* =============================================================== */
+
+
 /*                          PRESTATION                             */
+
+
 /* =============================================================== */
-.prestation{
-  width: 100vw;
-  max-width: 100%;
-  background-color: #F2F2F2;
-  gap: 3em;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(7, 10%);
-  grid-template-areas:". . . ."
-                      ". artPres1 artPres2 ."
-                      ". artPres1 artPres2 ."
-                      ". . . ."
-                      ". artPres3 artPres4 ."
-                      ". artPres3 artPres4 ."
-                      ". . . .";
+
+.prestation {
+    width: 100vw;
+    max-width: 100%;
+    background-color: #F2F2F2;
+    gap: 3em;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(7, 10%);
+    grid-template-areas: ". . . ." ". artPres1 artPres2 ." ". artPres1 artPres2 ." ". . . ." ". artPres3 artPres4 ." ". artPres3 artPres4 ." ". . . .";
 }
-.prestaPics{
-  width: 100%;
-  height: 50%;
-  object-fit: cover;
+
+.prestaPics {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
 }
-.presta1{
-  grid-area: artPres1;
+
+.presta1 {
+    grid-area: artPres1;
 }
-.presta2{
-  grid-area: artPres2;
+
+.presta2 {
+    grid-area: artPres2;
 }
-.presta3{
-  grid-area: artPres3;
+
+.presta3 {
+    grid-area: artPres3;
 }
-.presta4{
-  grid-area: artPres4;
+
+.presta4 {
+    grid-area: artPres4;
 }
